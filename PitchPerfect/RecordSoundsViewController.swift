@@ -18,16 +18,16 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate  {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        stopRecordButton.isEnabled = false
         // Do any additional setup after loading the view.
+        // When the application is start, the stop button will be disable
+        // for the user experience prespective
+        stopRecordButton.isEnabled = false
     }
 
     @IBAction func recordButton(_ sender: Any) {
         
-        recordingLabel.text = "Recording in progress..."
-        recordButton.isEnabled = false
-        stopRecordButton.isEnabled = true
         
+        configueUI(true)
         
         let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask, true)[0] as String
         let recordingName = "recordedVoice.wav"
@@ -48,10 +48,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate  {
     
     @IBAction func stopButton(_ sender: Any) {
         
-        recordingLabel.text = "Tap record button to start!"
-        stopRecordButton.isEnabled = false
-        recordButton.isEnabled = true
-        
+        configueUI(false)
         audioRecorder.stop()
         let audioSession = AVAudioSession.sharedInstance()
         try! audioSession.setActive(false)
@@ -83,6 +80,13 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate  {
             playSoundVC.recordedAudioURL = recordedAudioUrl
           }
       }
+    
+    
+    func configueUI(_ isRecording: Bool) {
+               stopRecordButton.isEnabled = isRecording
+               recordButton.isEnabled = !isRecording
+               recordingLabel.text = isRecording ? "Recording ..." : "Tap To Record"
+       }
     
 }
 
