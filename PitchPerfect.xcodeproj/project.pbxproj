@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		2ED1B326261B9EF800C8B21D /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 		2ED1B32D261BC12700C8B21D /* playsoundsviewcontroller+audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "playsoundsviewcontroller+audio.swift"; sourceTree = "<group>"; };
-		2EEC73AE26173F1B002599E2 /* PitchPerfectV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchPerfectV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EEC73AE26173F1B002599E2 /* PitchPerfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchPerfect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EEC73B126173F1B002599E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EEC73B326173F1B002599E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2EEC73B526173F1B002599E2 /* RecordSoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundsViewController.swift; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		2EEC73A526173F1B002599E2 = {
 			isa = PBXGroup;
 			children = (
-				2EEC73B026173F1B002599E2 /* PitchPerfectV2 */,
+				2EEC73B026173F1B002599E2 /* PitchPerfect */,
 				2EEC73AF26173F1B002599E2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,12 +52,12 @@
 		2EEC73AF26173F1B002599E2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2EEC73AE26173F1B002599E2 /* PitchPerfectV2.app */,
+				2EEC73AE26173F1B002599E2 /* PitchPerfect.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2EEC73B026173F1B002599E2 /* PitchPerfectV2 */ = {
+		2EEC73B026173F1B002599E2 /* PitchPerfect */ = {
 			isa = PBXGroup;
 			children = (
 				2EEC73B126173F1B002599E2 /* AppDelegate.swift */,
@@ -70,15 +70,15 @@
 				2ED1B326261B9EF800C8B21D /* PlaySoundsViewController.swift */,
 				2ED1B32D261BC12700C8B21D /* playsoundsviewcontroller+audio.swift */,
 			);
-			path = PitchPerfectV2;
+			path = PitchPerfect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2EEC73AD26173F1B002599E2 /* PitchPerfectV2 */ = {
+		2EEC73AD26173F1B002599E2 /* PitchPerfect */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2EEC73C226173F1C002599E2 /* Build configuration list for PBXNativeTarget "PitchPerfectV2" */;
+			buildConfigurationList = 2EEC73C226173F1C002599E2 /* Build configuration list for PBXNativeTarget "PitchPerfect" */;
 			buildPhases = (
 				2EEC73AA26173F1B002599E2 /* Sources */,
 				2EEC73AB26173F1B002599E2 /* Frameworks */,
@@ -88,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = PitchPerfectV2;
+			name = PitchPerfect;
 			productName = PitchPerfectV2;
-			productReference = 2EEC73AE26173F1B002599E2 /* PitchPerfectV2.app */;
+			productReference = 2EEC73AE26173F1B002599E2 /* PitchPerfect.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -107,7 +107,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2EEC73A926173F1B002599E2 /* Build configuration list for PBXProject "PitchPerfectV2" */;
+			buildConfigurationList = 2EEC73A926173F1B002599E2 /* Build configuration list for PBXProject "PitchPerfect" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -120,7 +120,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2EEC73AD26173F1B002599E2 /* PitchPerfectV2 */,
+				2EEC73AD26173F1B002599E2 /* PitchPerfect */,
 			);
 		};
 /* End PBXProject section */
@@ -296,7 +296,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MCVV86RKP8;
-				INFOPLIST_FILE = PitchPerfectV2/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PitchPerfect/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +315,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MCVV86RKP8;
-				INFOPLIST_FILE = PitchPerfectV2/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PitchPerfect/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,7 +330,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2EEC73A926173F1B002599E2 /* Build configuration list for PBXProject "PitchPerfectV2" */ = {
+		2EEC73A926173F1B002599E2 /* Build configuration list for PBXProject "PitchPerfect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2EEC73C026173F1C002599E2 /* Debug */,
@@ -339,7 +339,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2EEC73C226173F1C002599E2 /* Build configuration list for PBXNativeTarget "PitchPerfectV2" */ = {
+		2EEC73C226173F1C002599E2 /* Build configuration list for PBXNativeTarget "PitchPerfect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2EEC73C326173F1C002599E2 /* Debug */,
